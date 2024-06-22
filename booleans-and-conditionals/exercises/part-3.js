@@ -22,3 +22,54 @@ f) Otherwise, print "Fuel and engine status pending..." */
 
 /* 6) b) Code the following if/else check:
 If fuelLevel is above 20000 AND engineIndicatorLight is NOT red blinking OR commandOverride is true print "Cleared to launch!" Else print "Launch scrubbed!" */
+
+if (fuelLevel < 1000 || engineTemperature > 3500 || engineIndicatorLight === "red blinking"){
+    console.log(ENGINE FAILURE IMMIENT!");
+} else if (fuelLevel <= 5000 || engineTemperature > 2500){
+    console.log("Check fuel level. Engines running hot.");
+} else if (fuelLevel > 20000 && engineTemperture <+ 2500){
+    console.log("Full tank. Engines good.");
+} else if (fuelLevel > 10000 && engineTemperature <= 2500){
+    console.log("Fuel level above 50%. Engines are good.");
+} else if (fuelLevel > 5000 && engineTemperature <= 2500){
+    console.log("Fuek level above 25%. Engines good.");
+} else {
+    console.log("Fuel and engines status pendning...");
+}
+
+let commandOverride = true; || or false
+}
+if (commandOverride)
+    {
+        return true;
+    } else {
+        return fuelCheck && engineCheck;
+    }
+    let canLaunch = ShouldLaunch (commandOverride, fuelCheck, engineCheck);
+    console.log("Shuttle launch status:", canLaunch);
+
+    let fuelCheck = false; 
+
+    if (commandOverride)
+        {
+            return true;
+        } else {
+            return fuelCheck && engineCheck;
+        }
+    }
+    let canLaunch = shouldLaunch(commandOverride, fuelCheck, engineCheck);
+    console.log("Shuttle launch status:",
+        canLaunch);
+        if (fuelLevel > 20000 ||engineIndicatorLight == "NOT red blinking" || commandOverride = "Cleared to launch".);
+        console.log("Cleared to Launch.");
+} else if ("Launch scrubbed.");
+
+    )
+        }
+        }
+    }
+    }
+}
+})
+})
+}
