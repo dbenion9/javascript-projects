@@ -21,4 +21,4 @@ function averageForTest(testIndex,scores){
 module.exports = {
   averageForStudent: averageForStudent,
   averageForTest: averageForTest
-};
+};  

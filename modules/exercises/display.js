@@ -24,7 +24,7 @@ function printStudentScores(index,students,tests,scores){
   for (let i = 0; i<tests.length; i++){
     console.log(`${tests[i]} = ${scores[index][i]}%.`);
   }
-  return;
+  return;  
 }
 
 function printTestScores(index,test,students,scores){
