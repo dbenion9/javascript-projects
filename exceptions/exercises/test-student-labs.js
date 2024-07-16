@@ -22,3 +22,38 @@ let studentLabs = [
 ];
 
 gradeLabs(studentLabs);
+
+
+let studentLabs2 = [
+  {
+    student: 'Blake',
+    myCode: function (num) {
+      return Math.pow(num, num);
+    }
+  },
+  {
+    student: 'Jessica',
+    runLab: function (num) {
+      return Math.pow(num, num);
+    }
+  },
+  {
+    student: 'Mya',
+    runLab: function (num) {
+      return num * num;
+    }
+  }
+];
+
+function gradeLabs(labs) {
+  for (let i = 0; i < labs.length; i++) {
+    try {
+      let result = labs[i].runLab(2);
+      console.log(`${labs[i].student}'s result: ${result}`);
+    } catch (error) {
+      console.log(`${labs[i].student}'s result: Error thrown`);
+    }
+  }
+}
+
+gradeLabs(studentLabs2);
