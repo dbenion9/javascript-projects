@@ -28,3 +28,17 @@
 .centered {
     text-align: center;
 }
+
+#shuttleBackground {
+    background-color: green;
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+#rocket {
+    position: absolute;
+    left: 50%;  /* Center horizontally */
+    top: 50%;   /* Center vertically */
+    transform: translate(-50%, -50%); /* Adjust for the actual center */
+}
