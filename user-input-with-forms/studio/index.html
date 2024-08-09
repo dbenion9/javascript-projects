@@ -3,17 +3,33 @@
 <head>
 	<meta charset="utf-8">
 	<script>
+	let button=document.getElementById("submit"); 
+
+
 		// TODO: create a handler
     window.addEventListener("load", function(){
-        // TODO: register the handler
+        button.addEventListener("click", setSearchEngine());
+		function setSearchEngine() {
+ 
+		console.log("Test");
+		}
+		// TODO: register the handler
     });
 	</script>
 </head>
 
 <body>
 
-	<form id="searchForm">
+	<form id="searchForm" action=""> 
     <!-- TODO: add form elements -->
-	</form>
+	<input type="text" name="q">
+	<label>Google</label><input type="radio" name="engine" value="google"/>
+	<label>DuckDuckGo</label><input type="radio" name="engine" value="duckDuckGo"/>
+	<label>Bing</label><input type="radio" name="engine" value="Bing"/>
+	<label>Ask</label><input type="radio" name="engine" value="ask"/>
+	
+<button id="submit">Go</button>
+</form>
+	
 
 </body>
